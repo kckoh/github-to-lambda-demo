@@ -6,8 +6,7 @@ phases:
     commands:
       - echo "Installing dependencies..."
       - pip install -r requirements.txt -t lib
-      - echo "DONE"
-      - python -m pytest
+      - python -m pytest --pyargs lib
   build:
     commands:
       - echo "Zipping deployment package..."
