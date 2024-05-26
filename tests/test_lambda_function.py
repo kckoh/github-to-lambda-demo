@@ -17,7 +17,7 @@ def test_lambda_handler_success():
     context = {}
     expected_response =  {
         'statusCode': 200,
-        'body': json.dumps('Hello from Lambda!')
+        'body': json.dumps('Hello from Lambda Changed!')
     }
     response = lambda_function.lambda_handler(event, context)
     assert response == expected_response
